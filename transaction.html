@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <div class="sidebar">
+        <div class="logo">@DOSOMECODING</div>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li class="active"><a href="transaction.html">Transactions</a></li>
+        </ul>
+        <div class="support">Support</div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Transactions</h1>
+            <div class="search-export">
+                <input type="text" placeholder="Search by ID or destination">
+                <button class="export-btn">Export CSV</button>
+            </div>
+        </div>
+        <div class="transactions-section">
+            <div class="transactions-header">
+                <div class="tabs">
+                    <button class="active">All <span class="count">349</span></button>
+                    <button>Deposit <span class="count">114</span></button>
+                    <button>Withdraw <span class="count">213</span></button>
+                    <button>Trade <span class="count">22</span></button>
+                </div>
+            </div>
+            <div class="transactions-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Date & Time</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-09 07:06 PM</td>
+                            <td>INR Deposit</td>
+                            <td>+ ₹81,123.10</td>
+                            <td class="status pending">
+                                <div>Pending</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-07 02:48 PM</td>
+                            <td>INR Withdraw</td>
+                            <td>- ₹81,123.10</td>
+                            <td class="status processing">Processing</td>
+                        </tr>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-04 08:21 AM</td>
+                            <td>Buy</td>
+                            <td>+ 12.48513391 BTC</td>
+                            <td class="status cancelled">Cancelled</td>
+                        </tr>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-03 01:32 PM</td>
+                            <td>Sell</td>
+                            <td>- 0.36401632 BTC</td>
+                            <td class="status completed">Completed</td>
+                        </tr>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-03 09:32 AM</td>
+                            <td>BTC Deposit</td>
+                            <td>+ 4.13946104 BTC</td>
+                            <td class="status completed">Completed</td>
+                        </tr>
+                        <tr>
+                            <td>HDB32NA2H</td>
+                            <td>2022-06-01 01:56 PM</td>
+                            <td>BTC Withdraw</td>
+                            <td>- 10.00000000 BTC</td>
+                            <td class="status completed">Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
